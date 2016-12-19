@@ -75,6 +75,7 @@ All done!  Now you're distributing your computational load across multiple proce
 Allocates a computation cluster.  Options include:
 
   * `module` - **required** the path to the module to load
+  * `args` - **optional** array of command line args to pass to module when launched
   * `max_processes` - the maximum number of processes to spawn (default is `ciel(#cpus * 1.25)`)
   * `max_backlog` - the maximum length of the backlog, -1 indicates no limit (default is 10 * max_processes)
                     an error will be returned when max backlog is hit.
